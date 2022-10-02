@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Direccion de Envio</title>
+        <meta charset="UTF-8">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+        <nav class="nav">
+            <a class="logo nav-link" href="index.html">Maliarka</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Contacto.html">Contacto</a></li> 
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Facebook.html">Facebook</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Instagram.html">Instagram</a> </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Fotos.html">Fotos</a> </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Productos.html">Productos</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="DireccionDeEnvio.html">Direccion de Envio</a></li>
+                
+                
+            </ul>
+        </nav>
+       </header>
+        <section>
+            <h2>Direccion de Envio</h2>
+            <article>
+                <header><h3>Registro de su direccion para enviar su paquete</h3></header>
+                <form action="confirmacion.jsp" method="post">
+                    <input type="hidden" name="idUsuario" value="5556659"/>
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required><br/>
+                    
+                    <label>Provincia: </label>
+                    <input type="text" name="provincia" placeholder="Provincia" required><br/>
+                    
+                    <label>Caton: </label>
+                    <input type="text" name="canton" placeholder="Canton" required><br/>
+                    
+                    <label>Distrito: </label>
+                    <input type="text" name="distrito" placeholder="Distrito" required><br/>
+                    
+                    <label>Direccion: </label>
+                    <input type="text" name="direccion" placeholder="Direccion" required><br/>
+                    
+                    <label>Codigo Postal: </label>
+                    <input type="text" name="codigo" placeholder="00000" required><br/>
+                    
+                    <label>Correo: </label>
+                    <input type="email" name="correo" placeholder="arielsolisb@gmail.com" required><br/>
+                    
+                    <label>Fecha en la que le gustara recibirlo: </label>
+                    <input type="date" name="fecha"><br/>
+                    
+                    <label>Hora de disponibilidad: </label>
+                    <input type="time" name="hora"><br/>
+                    
+                    <label>Esta dentro de la GAM: </label>
+                    Si <input type="radio" name="asistencia" value="Si">No <input type="radio" name="asistencia" value="No"><br/>
+                    
+                    <label>Contraseña: </label>
+                    <input type="password" name="codigo"><br/>
+                    
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>    
+            </article>
+        </section>
+    </body>
+</html>
